@@ -1,4 +1,5 @@
 # Android In-App Billing v3 Library [![Build Status](https://travis-ci.org/anjlab/android-inapp-billing-v3.svg?branch=master)](https://travis-ci.org/anjlab/android-inapp-billing-v3)  [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.anjlab.android.iab.v3/library/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.anjlab.android.iab.v3/library)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Flucasborer1%2Fandroid-inapp-billing-v3.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Flucasborer1%2Fandroid-inapp-billing-v3?ref=badge_shield)
 
 This is a simple, straight-forward implementation of the Android v3 In-app billing API.
 
@@ -128,6 +129,9 @@ public void onDestroy() {
   super.onDestroy();
 }
 ```
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Flucasborer1%2Fandroid-inapp-billing-v3.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Flucasborer1%2Fandroid-inapp-billing-v3?ref=badge_large)
 
 ### Instantiating a `BillingProcessor` with late initialization
 The basic `new BillingProcessor(...)` actually binds to Play Services inside the constructor. This can, very rarely, lead to a race condition where Play Services are bound and `onBillingInitialized()` is called before the constructor finishes, and can lead to NPEs. To avoid this, we have the following:
